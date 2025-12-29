@@ -22,6 +22,7 @@ ENV/
 media/
 static/
 staticfiles/
+project/local_settings.py
 
 # Logs and databases
 *.log
