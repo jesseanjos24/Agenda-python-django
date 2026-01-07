@@ -2,35 +2,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'global/css/styles.css' %}">
-    <title></title>
+    {% include "global/partial/head.html" %}
 </head>
 <body>
-    <header class="header">
-        <h1 class="header-heading">
-            <a href="{% url "contact:index" %}" class="header-link">AGENDA</a>
-        </h1>
-        <nav class="menu">
-            <ul class="menu-list">
-                <li class="menu-item">
-                    <a href="" class="menu-link">LINK 01</a>
-                </li>
-                <li class="menu-item">
-                    <a href="" class="menu-link">LINK 02</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="search">
-            <form action="" method="get">
-                <input type="text" class="search-input" name="q" placeholder="Search..." id="search">
-            </form>
-        </div>
-    </header>
+    {% include "global/partial/header.html" %}
     <main class="content">
         {% block content %}{% endblock %}
+        {% include "global/partial/paginador.html" %}
     </main>
 </body>
 </html>
