@@ -122,7 +122,7 @@ STATICFILES_DIRS = [
     BASE_DIR / "base_statics",
 ]
 
-MEDIA_URL = 'media/'
+MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / "media"
 
 STATIC_ROOT = BASE_DIR / "static" #onde o collectstatic vai juntar todos os arquivos estaticos para producao
