@@ -12,6 +12,9 @@ urlpatterns = [
     
     #user views
     path('user/create/', views.user_forms.register, name='register'),
+    path('user/login/', views.user_forms.login_view, name='login'),
+    path('user/logout/', views.user_forms.logout_views, name='logout'),
+    path('user/update/', views.user_forms.user_update, name='user_update'),
     
     
     #read views

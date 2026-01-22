@@ -101,6 +101,13 @@ svg {
   background: var(--clr-light-shadow-10);
 }
 
+.welcome {
+  text-align: center;
+  color: var(--link-light-color);
+  margin-top: 0.5rem;
+  font-size: var(--small-font-size);
+}
+
 .content {
   max-width: var(--main-page-width);
   margin: calc(var(--spacing) * 2) auto;
@@ -239,6 +246,11 @@ svg {
   border: 1px solid rgba(255, 255, 0, 90%);
 }
 
+.message.info {
+  background: rgba(0, 0, 255, 0.3);
+  border: 1px solid rgba(0, 0, 255, 90%);
+}
+
 .form-wrapper {
   max-width: 60rem;
   margin: var(--spacing) auto;
@@ -292,6 +304,11 @@ svg {
   font-size: var(--smaller-font-size);
 }
 
+.contact-links {
+  display: flex;
+  gap: var(--spacing);
+}
+
 .btn-link {
   font-size: var(--small-font-size);
   text-decoration: none;
@@ -309,7 +326,7 @@ svg {
   color: var(--clr-white);
   font-weight: bold;
   border: none;
-  padding: 3rem 2rem;
+  padding: 12px 25px;
   border-radius: var(--default-border-radius);
   cursor: pointer;
   transition: filter var(--transition-fast) ease-in-out;
